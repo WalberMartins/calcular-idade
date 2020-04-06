@@ -18,7 +18,7 @@ public class CalculaIdade extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		PrintWriter out = resp.getWriter();
 		Calendar dataAtual = Calendar.getInstance();
 		Calendar dataNascimento = Calendar.getInstance();
