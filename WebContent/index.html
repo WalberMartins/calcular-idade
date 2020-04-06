@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
-	<title>Calcular idade</title>
+<meta charset="UTF-8">
+<title>Login</title>
+<style>
+input {
+	margin-bottom: 1pt;
+}
+
+p {
+	color:red; 
+	font-weight:bold;
+	font-size: 13px;
+}
+</style>
 </head>
 <body>
-	<h2>Calculando idade</h2>
-	<form method="post" action="calculaIdade">
-		<p>Digite sua data de nascimento:</p>
-		<input type="text" name="dataNascimento" id="dataNascimento">
-	
-		<input type="submit" value="enviar">
+	<h1>Login</h1>
+	<p>(usuário: admin senha: 12345)</p>
+	<form method="post" action="validarLogin">
+		<label for="user">Usuário</label><br> 
+		<input type="text" id="user" name="user"><br> 
+		<label for="password">Senha</label><br>
+		<input type="password" id="password" name="password"><br>
+
+		<input type="submit" value="entrar">
 	</form>
 </body>
 </html>
